@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BnR360</title>
+    <link rel="icon" type="image/x-icon" href="./images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>        
+        <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+</head>
+
+<body>
+    <header>
+        <div class="head1 px-10 hide">
+            <a href="">
+                <img src="images/BnR360.webp" alt="">
+            </a>
+            <div>
+                <button id="member" class="btn dropdown-toggle" style="border: none;padding-top: 25px;" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Product Sign in
+                </button>
+                <ul class="dropdown-menu" style="background-color: black; color:white;">
+                    <li><a class="dropdown-item inner-drop" href="https://sphere.bnr360.com/login">Sphere</a>
+                    </li>
+                    <li><a class="dropdown-item inner-drop" href="https://genrapide.bnr360.com/signin">GenRapide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigation px-10">
+            <i class="fi fi-sr-menu-burger ban header-toggle"></i>
+            <ul class="inner-nav" id="wrap">
+                <i class="fi fi-sr-circle-xmark header-close banq"></i>
+                <li><a class="butn" href="../index.html">Home</a></li>
+
+                <li type="button" id="productLi" onclick="openProducts()">
+                    <button type="button" onblur="blurProducts()" class="border-0 bg-black">
+                        <a id="member" class="btn dropdown-toggle navs small-screen"
+                            style="border: none;padding-top: 0px; color: white; font-size: 20px;" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu drop" style="background-color: black; color:white; min-width: 0;">
+                            <li><a class="dropdown-item inner-drop " href="../pages/sphere.html">Sphere</a></li>
+                            <li><a class="dropdown-item inner-drop " href="../pages/genrapide.html">GenRapide</a></li>
+                            <li><a class="dropdown-item inner-drop " href="../pages/prowin.html">Prowin Prep</a></li>
+
+                        </ul>
+                    </button>
+                </li>
+
+                <li><a class="butn" href="../pages/service.html">Services</a></li>
+                <li><a class="butn" href="../pages/growth.html">Press Release</a></li>
+                <li><a class="butn" href="../pages/blogs.html">Blogs</a></li>
+                <li><a class="butn" href="../pages/case-study.html">Case Study</a></li>   
+                <li><a class="butn" href="../pages/pricing.html">Pricing</a></li>
+            </ul>
+            <a class="btxx" href="../pages/contact.html">Contact Us</a>
+        </div>
+    </header>
+
+
+  <!--hero banner-->
+  <div class="px-10 pt-2 service-banner">
+    <div class="serv-banner">
+        <div class="left-service-banner">
+            <h2>BnR360 Solutions: Your Growth Partner </h2>
+            <p>At BnR360, we believe in making business growth simple. Whether you're just starting out or ready to scale, we’ve got the right tools and expertise to get you there. From managing bids and recruitment to providing strategic support, we ensure you stay ahead of the competition. Our easy-to-use AI-powered solutions streamline your operations, allowing you to focus on growth. </p>
+            <div class="button-container">
+                <a class="btc first-sec" href="#solution-table">Check Pricing </a>
+                <!-- <a class="btc second-sec" href="../pages/pricing.html">Customize</a> -->
+            </div>
+        </div>
+
+        <div class="service-right">
+            <img class="service-pic img-fluid" src="../images/Mobile.webp" alt="BnR360 Service Image">
+        </div>
+    </div>
+</div>
+
+<!--hero banner end-->
+<div class="agency-heading">
+    <h1 class="haeding">Launch Your Agency with <span class="highlight">Confidence</span></h1>
+    <p>Starting a new agency? We've got everything you need to hit the ground running—minus the headaches.</p>
+</div>
+
+<!-- section 1 -->
+<div class="agency-container">
+    <div class="section">
+        <div class="icon">⚙️</div>
+        <h2>Complete Setup</h2>
+        <p>We’ll build your recruitment and bidding processes from scratch, so you don’t have to.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">📋</div>
+        <h2>Hands-On Training</h2>
+        <p>We train your team to navigate daily operations smoothly—whether it’s finding top talent or submitting winning bids.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">🧑‍💼</div>
+        <h2>We’ve Got Your Back</h2>
+        <p>Full-time recruiters, expert bid writers, and admin support are at your service. Let us handle the backend while you focus on building relationships and closing deals.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">🌟</div>
+        <h2>Why Choose This Package?</h2>
+        <p>Because starting strong is half the battle. We help you get the foundation right so you can focus on what matters—growing your business.</p>
+    </div>
+</div>
+
+<div class="cta">
+    <a href="../pages/contact.html">Let’s Get Started →</a>
+</div>
+
+<!-- section 2 -->
+<div class="container my-5">
+    <!-- Heading Section -->
+        <h1 class="haeding">Ready to Scale? Let’s<span class="highlight"> Grow Together!</span></h1>
+        <p>Is your talent acquisition and RFP management agency bursting at the seams? That’s a good problem to have! With our Expansion & Growth Package, you’ll be able to handle more business without sacrificing quality or burning out your team.</p>
+   
+
+    <!-- Content Section with Text and Image -->
+    <div class="contents-section">
+        <div class="text-section">
+            <h2>Smarter Processes</h2>
+            <p>We optimize what you’re already doing, making your workflows faster and smoother.</p>
+
+            <h2>Build Your Dream Team</h2>
+            <p>With additional recruiters and bid writers, you’ll have the resources to take on bigger, more complex projects.</p>
+
+            <h2>Strategic Support</h2>
+            <p>Monthly check-ins with our experts ensure you’re always moving in the right direction.</p>
+
+            <h2>Why Choose This Package?</h2>
+            <p>You’ve put in the hard work, now it’s time to scale. We help you grow strategically, so you don’t lose control or quality.</p>
+
+            <a href="../pages/contact.html" class="cta-button">Let’s Talk Growth →</a>
+        </div>
+
+        <div class="image-section">
+            <img src="../images/challenge-faced.png" alt="Growth Image">
+        </div>
+    </div>
+</div>
+
+<!-- section 3 -->
+<div class="container">
+    <!-- Heading Section -->
+        <h1 class="haeding"><span class="highlight">Government</span> Contracts Made Easy</h1>
+
+    <!-- Content Section with Bullet Points and Image -->
+    <div class="contents-section">
+        <div class="text-section">
+            <ul>
+                <li><strong>Compliance, Handled:</strong> We set up your systems to meet strict government requirements, so you don’t have to worry about missing any details.</li>
+
+                <li><strong>Specialized Support:</strong> Our dedicated government bid writer and recruiter know exactly what it takes to win those contracts.</li>
+
+                <li><strong>We’ll Manage the Paperwork:</strong> From documentation to compliance management, we’ve got it covered.</li>
+
+                <li><strong>Why Choose This Package?</strong> Government contracts are tricky, but they’re worth it. We make sure your agency is perfectly positioned to compete and win.</li>
+            </ul>
+
+            <a href="../pages/contact.html" class="cta-button">See How We Can Help →</a>
+        </div>
+
+        <div class="image-section">
+            <img src="../images/Government Contracts Made Easy.jpg" alt="Government Contracts Image">
+        </div>
+    </div>
+</div>
+
+<!-- section 4 -->
+<section class="success-section">
+    <div class="container">
+        <h1>Customize Your Success</h1>
+        <p class="subtext">
+            We know one size doesn’t fit all. That’s why we offer custom solutions for agencies that need a little bit more—or less. Whether you need an extra recruiter, more administrative support, or expert bid writers, we’ll build a package that’s right for you.
+        </p>
+        <a href="../pages/contact.html" class="cta-button">Start Building Your Custom Plan →</a>
+    </div>
+</section>
+
+
+
+<!-- solution table -->
+<div class="container text-center my-5">
+    <!-- Main Heading -->
+
+    <!-- Pricing Table Section -->
+    <div class="row justify-content-center">
+        <!-- Column 1: Agency Launch -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100" id="solution-table">
+                <div class="solution-header">
+                    <h3>Agency Launch</h3>
+                    <p class="price">$2,599/month</p>
+                    <p>+ $4,999 Setup Fee</p>
+                    <p class="description">Start your agency strong</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Start Now</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 1</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 1</li>
+                        <li><strong>Admin Support</strong>: ✔ Part-Time</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Basic</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Basic</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ 1 Call</li>
+                        <li><strong>Custom Integration</strong>: </li>
+                        <li><strong>Priority Support</strong>: </li>
+                        <li><strong>Compliance Setup</strong>: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2: Expansion & Scale -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Expansion & Scale</h3>
+                    <p class="price">$5,699/month</p>
+                    <p>+ $7,499 Setup Fee</p>
+                    <p class="description">Grow your operations</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Get Started</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 2</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 2</li>
+                        <li><strong>Admin Support</strong>: ✔ Expanded Full-Time</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Full Access</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Full ERP Integration</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ Monthly Sessions</li>
+                        <li><strong>Custom Integration</strong>: ✔ Advanced</li>
+                        <li><strong>Priority Support</strong>: ✔</li>
+                        <li><strong>Compliance Setup</strong>: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3: Government RFP Mastery -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Government RFP Mastery</h3>
+                    <p class="price">$2,999/month</p>
+                    <p>+ $9,999 Setup Fee</p>
+                    <p class="description">Master government contracts</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Talk to Sales</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 1 (Govt Specialist)</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 1 (Govt Proposals/RFP Writer)</li>
+                        <li><strong>Admin Support</strong>: ✔ Full-Time Admin</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Full Access (Govt Focus)</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Full ERP Integration</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ Priority Strategy Support</li>
+                        <li><strong>Custom Integration</strong>: ✔ Custom Integration</li>
+                        <li><strong>Priority Support</strong>: ✔ Priority Support</li>
+                        <li><strong>Compliance Setup</strong>: ✔ Government Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="main-footer">
+        <footer class="three">
+            <div class="container">
+                <div class="row g-lg-4 gy-5">
+                    <div class="col-lg-4 col-sm-6 d-flex">
+                        <div class="footer-widget">
+                            <div class="footer-contact ">
+                              
+                                <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                            </div>
+                            <div class="footer-contact mb-40">
+                                <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                    href="mailto:support@bnr360.com">support@bnr360.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Products</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/genrapide.html">GenRapide</a></li>
+                                    <li><a href="/pages/sphere.html">Sphere</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="pages/service.html">TurnKey Solutions</a></li>
+                                    <li><a href="pages/service.html">Enterprise</a></li>
+                                    <li><a href="/pages/service.html">Pay Per Need</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Resources</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/contact.html">Contact</a></li>
+                                    <li><a href="/pages/blogs.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-btn-content">
+                                <div class="copyright-area">
+                                    <p>©Copyright 2024</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1024) {
+                    $('.slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.prev'),
+                        nextArrow: $('.next'),
+                    });
+                } else {
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.slider').hasClass('slick-initialized')) {
+                    $('.slider').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1024) {
+                    $('.feature').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.previous'),
+                        nextArrow: $('.nexts'),
+                    });
+                } else {
+                    $('.feature').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.feature').hasClass('slick-initialized')) {
+                    $('.feature').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1025) {
+                    $('.sphre').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.pre'),
+                        nextArrow: $('.nex'),
+                    });
+                } else {
+                    $('.sphre').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.sphre').hasClass('slick-initialized')) {
+                    $('.sphre').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1025) {
+                    $('.gen').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.fans'),
+                        nextArrow: $('.pens'),
+                    });
+                } else {
+                    $('.gen').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.gen').hasClass('slick-initialized')) {
+                    $('.gen').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 768) {
+                    $('.multiple').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        prevArrow: $('.fan'),
+                        nextArrow: $('.pen'),
+                    });
+                } else {
+                    $('.multiple').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.multiple').hasClass('slick-initialized')) {
+                    $('.multiple').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        const OpenButton = document.querySelector(".header-toggle")
+        const CloseButton = document.querySelector(".header-close")
+
+        OpenButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.add("active")
+        })
+
+        CloseButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.remove("active")
+        })
+
+
+        window.addEventListener("scroll", function () {
+
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.inner-nav a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(function (navLink) {
+                        navLink.classList.remove('active');
+                    });
+
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+
+    </script>
+    <script src="js/contact.js"></script>
+
+   <script>
+    const animatedWord = document.querySelector('.animated-word');
+const staticText = document.querySelector('.static-text');
+
+const words = ['Manage', 'Track', 'Automate', 'Outsource'];
+const colors = ['#ff045a', '#3e85e3', '#8bc34a', '#2196f3'];
+
+let currentWordIndex = 0;
+
+function animateWords() {
+    const word = words[currentWordIndex];
+    const color = colors[currentWordIndex];
+
+    animatedWord.classList.add('fade-out');
+    setTimeout(() => {
+        animatedWord.textContent = word;
+        animatedWord.classList.remove('fade-out');
+        animatedWord.style.color = color;
+    }, 500);
+
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+
+    setTimeout(animateWords, 2000);
+}
+
+animateWords();
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+<style>
+        /* Tab styles */
+        .nav-tabs .nav-link {
+      border: 1px solid transparent;
+      color: black;
+      background-color: transparent;
+      border-radius: 0;
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #8e7bfb;
+      color: white;
+      border-radius: 50px;
+    }
+    .nav-tabs {
+    border-bottom: none; /* Removes the bottom border of the tabs */
+    }
+</style>
+<body>
+    <div>
+        <header>
+            <div class="head1 px-10 hide">
+                <a href="/index.html">
+                    <img src="../images/BnR360.webp " alt="">
+                </a>
+
+                <div>
+
+                    <button id="member" class="btn dropdown-toggle" style="border: none;padding-top: 25px;"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Product Sign in
+                    </button>
+                    <ul class="dropdown-menu" style="background-color: black; color:white;">
+                        <li><a class="dropdown-item inner-drop" href="https://sphere.bnr360.com/login">Sphere</a></li>
+                        <li><a class="dropdown-item inner-drop" href="https://genrapide.bnr360.com/signin">GenRapide</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation px-10">
+                <i class="fi fi-sr-menu-burger ban header-toggle"></i>
+
+                <ul class="inner-nav" id="wrap">
+                    <i class="fi fi-sr-circle-xmark header-close banq"></i>
+                    <li><a class="butn navs" href="../index.html">Home</a></li>
+
+
+                    <li type="button" id="productLi" onclick="openProducts()">
+                        <button type="button" onblur="blurProducts()" class="border-0 bg-black">
+                            <a id="member" class="btn dropdown-toggle navs small-screen"
+                                style="border: none;padding-top: 0px; color: white; font-size: 20px;" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu drop" style="background-color: black; color:white; min-width: 0;">
+                                <li><a class="dropdown-item inner-drop " href="../pages/sphere.html">Sphere</a></li>
+                                <li><a class="dropdown-item inner-drop " href="../pages/genrapide.html">GenRapide</a>
+                                </li>
+                                <li><a class="dropdown-item inner-drop " href="../pages/prowin.html">Prowin Prep</a></li>
+
+                            </ul>
+                        </button>
+
+
+                    </li>
+
+
+
+                    <li><a class="butn navs" href="../pages/service.html">Services</a></li>
+                    <li><a class="butn" href="../pages/growth.html">Press Release</a></li>
+                    <li><a class="butn" href="../pages/blogs.html">Blogs</a></li>
+                    <li><a class="butn" href="../pages/case-study.html">Case Study</a></li>  
+                    <li><a class="butn navs active" href="../pages/pricing.html">Pricing</a></li>
+
+                </ul>
+
+                <a class="btxx" href="../pages/contact.html">Contact Us</a>
+
+            </div>
+
+        </header>
+    </div>
+
+    <div class="pricing-banner">
+        <div class="px-10">
+            <div class="pricing-inner">
+                <div class="pricing-left-side">
+                    <h2>Plans that fit your need</h2>
+                    <p>No matter the size of your business, we have a plan to streamline your bidding and resourcing
+                        processes. Choose from core features to advanced capabilities – find the perfect fit for your
+                        company with BnR360.
+                    </p>
+                    <div class="home-hero-banner">
+                        <a class="btc third-sec" href="#checkpricing">Check pricing</a>
+
+                    </div>
+                </div>
+                <img class="pricing-image" src="../images/Pricing Monitor.webp" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-plan text-center mt-5" id="checkpricing">
+        <h2 class="haedings">Discover Plans For You</h2>
+        <p>BnR360 offers flexible pricing that puts AI-powered efficiency within reach. Pay only for what you need.
+            Discover our plans and unlock your business's full potential.
+        </p>
+    </div>
+   
+      <!-- Tab navigation -->
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="sphere-tab" data-bs-toggle="tab" data-bs-target="#sphere" type="button" role="tab" aria-controls="sphere" aria-selected="true">Sphere</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="genrapid-tab" data-bs-toggle="tab" data-bs-target="#genrapid" type="button" role="tab" aria-controls="genrapid" aria-selected="false">GenRapid</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="solution-tab" data-bs-toggle="tab" data-bs-target="#solution" type="button" role="tab" aria-controls="solution" aria-selected="false">Solution</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">Services</button>
+        </li>
+      </ul>
+
+    <!-- sphere pricing -->
+ <div class="tab-content mt-4" id="myTabContent">
+    <div class="tab-pane fade show active" id="sphere" role="tabpanel" aria-labelledby="sphere-tab">
+    <div class="container" id="products-pricing">
+        <div class="logo-container">
+            <img src="../images/spheres.webp" alt="Sphere Logo" class="sphere-logo">
+        </div>
+        <div class="pricing-table row">
+            <!-- <div class="price-toggler-container">
+                <span class="month">Monthly</span>
+                <div class="price-toggler"></div>
+                <span class="year">Yearly</span>
+            </div> -->
+            <!-- Free Plan -->
+            <div class="free-card col-md-3">
+            <div class="pricing-card" style="padding: 50px;">
+                <h3>Free</h3>
+                <div class="price">$0.00</div>
+                <a href="https://sphere.bnr360.com/signup" class="btn btn-custom outline">Start for free</a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>1000 Applicant</p>
+                <p><i class="fa fa-check mx-1"></i>2000 Jobs</p>
+                <p><i class="fa fa-check mx-1"></i>2GB File storagr</p>
+
+            </div>
+    </div>
+            <!-- Premium Plan -->
+             <div class="premium-card col-md-3">
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <div class="price">$29.99/mo </div>
+                <div class="price">$26.99/annually </div>
+                <a href="https://sphere.bnr360.com/signup" class="btn btn-custom outline">$29.99/mo </a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>2000 Applicant</p>
+                <p><i class="fa fa-check mx-1"></i>500 Jobs</p>
+                <p><i class="fa fa-check mx-1"></i>50 Companies</p>
+                <p><i class="fa fa-check mx-1"></i>100 Corporate Referennces</p>
+                <p><i class="fa fa-check mx-1"></i>100 security clearances</p>
+                <p><i class="fa fa-check mx-1"></i>100 Contracts</p>
+                <p><i class="fa fa-check mx-1"></i>1GB File storage</p>
+            </div>
+    </div>
+            <!-- Pro Plan (Most Popular) -->
+             <div class="standard-card col-md-3">
+            <div class="pricing-card featured">
+                <div class="most-popular">Premium</div>
+                <h3>Pro</h3>
+                <div class="price">$99.99/mo </div>
+                <div class="price">$89.99/annually  </div>
+                <a href="https://sphere.bnr360.com/signup" class="btn btn-custom primary">$99.99/mo </a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>500 Companies</p>
+                <p><i class="fa fa-check mx-1"></i>50 Corporate Referennces</p>
+                <p><i class="fa fa-check mx-1"></i>500 security clearances</p>
+                <p><i class="fa fa-check mx-1"></i>50 Contracts</p>
+                <p><i class="fa fa-check mx-1"></i>5TB File storage</p>
+            </div>
+        </div>
+    
+            <!-- Enterprise Plan -->
+             <div class="enterprise-card col-md-3">
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <div class="price-subtext">Contact sales for pricing</div>
+                <a href="../pages/contact.html" class="btn btn-custom outline">Talk to sales</a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>Unlimited</p>
+                <p><i class="fa fa-check mx-1"></i>As per requirement </p>
+            </div>
+        </div>
+    </div>
+</div> 
+</div>
+
+    <!-- genrapid pricing -->
+    <div class="tab-pane fade" id="genrapid" role="tabpanel" aria-labelledby="genrapid-tab">
+        <div class="container">
+        <div class="logo-container">
+            <img src="../images/GenRapide Logo-new.webp" alt="GenRapide Logo" class="sphere-logo">
+        </div>
+        <div class="pricing-table row">
+            <!-- Free Plan -->
+            <div class="free-card col-md-3">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <a href="https://genrapide.bnr360.com/signup" class="btn btn-custom outline">Select Plan</a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>1,000,000 Tokens</p>
+                <p><i class="fa fa-check mx-1"></i>15 Documents</p>
+                <p><i class="fa fa-check mx-1"></i>9.3 GB  storage</p>
+                <p><i class="fa fa-check mx-1"></i>10 users</p>
+               
+
+            </div>
+    </div>
+            <!-- Premium Plan -->
+             <div class="premium-card col-md-3">
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <a href="https://genrapide.bnr360.com/signup" class="btn btn-custom outline">Select plan</a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>1,000,000 Tokens</p>
+                <p><i class="fa fa-check mx-1"></i>30 Documents</p>
+                <p><i class="fa fa-check mx-1"></i>977 MB  storage</p>
+                <p><i class="fa fa-check mx-1"></i>20 users</p>
+            </div>
+    </div>
+            <!-- Pro Plan (Most Popular) -->
+             <div class="standard-card col-md-3">
+            <div class="pricing-card featured">
+                <h3>Premium</h3>
+                <a href="https://genrapide.bnr360.com/signup" class="btn btn-custom primary">Select Plan</a>
+            </div>
+            <div class="card-content">
+                <p><i class="fa fa-check mx-1"></i>10,000 Tokens</p>
+                <p><i class="fa fa-check mx-1"></i>10 Documents</p>
+                <p><i class="fa fa-check mx-1"></i>95 MB  storage</p>
+                <p><i class="fa fa-check mx-1"></i>30 users</p>
+            </div>
+        </div>
+    
+    </div>
+</div> 
+</div>
+
+<!-- services pricing -->
+<div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+<div class="container text-center my-5">
+    <!-- Main Heading -->
+    <h1 class="haeding"><span class="highlight">BnR 360 Services  </span> Subscription Plans</h1>
+<p>Steal Deal 
+
+    10% off on Free Trial for the first 3 months if converted within 30 days. </p>
+    <!-- Pricing Table Section -->
+    <div class="row justify-content-center mt-2">
+        <!-- Free Trial Column -->
+        <div class="col-md-3 mb-4">
+            <div class="services-pricing bg-dark text-white h-100">
+                <div class="pricing-header">
+                    <h3>Free Trial (2 Weeks)</h3>
+                    <p class="price">Free</p>
+                    <p>Looking for the perfect</p>
+                </div>
+                <div class="pricing-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiter:</strong> 1 (10 hours total)</li>
+                        <li><strong>Bid/Resume Writer:</strong> 1 (5 hours total)</li>
+                        <li><strong>Admin Support:</strong> 5 Hours</li>
+                        <li><strong>Consultation Call:</strong> 1 Free</li>
+                        <li><strong>Reports:</strong> Basic Progress Report</li>
+                        <li><strong>GenRapide AI Access:</strong> 1 AI-generated bid (Optional)</li>
+                        <li><strong>Sphere ERP/CRM Access:</strong> ✘</li>
+                        <li><strong>Priority Support:</strong> ✘</li>
+                        <li><strong>Customer Success Manager:</strong> ✘</li>
+                        <li><strong>Add-ons/ Premiums:</strong> ✘</li>
+                    </ul>
+                    <a href="#" class="btn btn-light mt-3">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Basic Plan Column -->
+        <div class="col-md-3 mb-4">
+            <div class="services-pricing bg-dark text-white h-100">
+                <div class="pricing-header">
+                    <h3>Basic Plan ($2,499/mo)</h3>
+                    <p class="price">$2,499/month</p>
+                    <p>Perfect for Small Agencies</p>
+                </div>
+                <div class="pricing-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiter:</strong> 1 Full-Time</li>
+                        <li><strong>Bid/Resume Writer:</strong> 1 Full-Time</li>
+                        <li><strong>Admin Support:</strong> 20 Hours</li>
+                        <li><strong>Consultation Call:</strong> Monthly Strategy Call</li>
+                        <li><strong>Reports:</strong> Basic Reports</li>
+                        <li><strong>GenRapide AI Access:</strong> ✘</li>
+                        <li><strong>Sphere ERP/CRM Access:</strong> ✘</li>
+                        <li><strong>Priority Support:</strong> ✘</li>
+                        <li><strong>Customer Success Manager:</strong> ✔</li>
+                        <li><strong>Add-ons/ Premiums:</strong> ✔</li>
+                    </ul>
+                    <a href="#" class="btn btn-light mt-3">$2,499/month</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Plan Column -->
+        <div class="col-md-3 mb-4">
+            <div class="services-pricing bg-dark text-white h-100">
+                <div class="pricing-header">
+                    <h3>Professional Plan ($5,499/mo)</h3>
+                    <p class="price">$5,499/month</p>
+                    <p>Ideal for Growing Businesses</p>
+                </div>
+                <div class="pricing-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiter:</strong> 1 Full-Time</li>
+                        <li><strong>Bid/Resume Writer:</strong> 2 Full-Time</li>
+                        <li><strong>Admin Support:</strong> 50 Hours</li>
+                        <li><strong>Consultation Call:</strong> Weekly Strategy Call</li>
+                        <li><strong>Reports:</strong> Priority Reports</li>
+                        <li><strong>GenRapide AI Access:</strong> Basic Access</li>
+                        <li><strong>Sphere ERP/CRM Access:</strong> ✔</li>
+                        <li><strong>Priority Support:</strong> ✔ (for Bids/Resumes)</li>
+                        <li><strong>Customer Success Manager:</strong> ✔</li>
+                        <li><strong>Add-ons/ Premiums:</strong> ✔</li>
+                    </ul>
+                    <a href="#" class="btn btn-light mt-3">$5,499/month</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Enterprise Plan Column -->
+        <div class="col-md-3 mb-4">
+            <div class="services-pricing bg-dark text-white h-100">
+                <div class="pricing-header">
+                    <h3>Enterprise Plan (Custom Pricing)</h3>
+                    <p class="price">Custom Pricing</p>
+                    <p>Tailored for Large Agencies</p>
+                </div>
+                <div class="pricing-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiter:</strong> 3+ Full-Time</li>
+                        <li><strong>Bid/Resume Writer:</strong> 3+ Full-Time</li>
+                        <li><strong>Admin Support:</strong> Dedicated Admin Team (Unlimited)</li>
+                        <li><strong>Consultation Call:</strong> Weekly/Custom as required</li>
+                        <li><strong>Reports:</strong> Advanced Reports</li>
+                        <li><strong>GenRapide AI Access:</strong> Full Access</li>
+                        <li><strong>Sphere ERP/CRM Access:</strong> Full Access</li>
+                        <li><strong>Priority Support:</strong> 24/7 Priority Support</li>
+                        <li><strong>Customer Success Manager:</strong> ✔</li>
+                        <li><strong>Add-ons/ Premiums:</strong> Customizable based on needs</li>
+                    </ul>
+                    <a href="#" class="btn btn-light mt-3">Talk to Sales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- solution table -->
+<div class="tab-pane fade" id="solution" role="tabpanel" aria-labelledby="solution-tab">
+<div class="container text-center my-5">
+    <!-- Main Heading -->
+    <h1 class="haeding">BnR360 Specialized solution packages <span class="highlight"></span>  </h1>
+    <div class="underline"></div>
+    <!-- Pricing Table Section -->
+    <div class="row justify-content-center">
+        <!-- Column 1: Agency Launch -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100" id="solution-table">
+                <div class="solution-header">
+                    <h3>Agency Launch</h3>
+                    <p class="price">$2,599/month</p>
+                    <p>+ $4,999 Setup Fee</p>
+                    <p class="description">Start your agency strong</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Start Now</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 1</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 1</li>
+                        <li><strong>Admin Support</strong>: ✔ Part-Time</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Basic</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Basic</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ 1 Call</li>
+                        <li><strong>Custom Integration</strong>: </li>
+                        <li><strong>Priority Support</strong>: </li>
+                        <li><strong>Compliance Setup</strong>: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2: Expansion & Scale -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Expansion & Scale</h3>
+                    <p class="price">$5,699/month</p>
+                    <p>+ $7,499 Setup Fee</p>
+                    <p class="description">Grow your operations</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Get Started</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 2</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 2</li>
+                        <li><strong>Admin Support</strong>: ✔ Expanded Full-Time</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Full Access</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Full ERP Integration</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ Monthly Sessions</li>
+                        <li><strong>Custom Integration</strong>: ✔ Advanced</li>
+                        <li><strong>Priority Support</strong>: ✔</li>
+                        <li><strong>Compliance Setup</strong>: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3: Government RFP Mastery -->
+        <div class="col-md-4 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Government RFP Mastery</h3>
+                    <p class="price">$2,999/month</p>
+                    <p>+ $9,999 Setup Fee</p>
+                    <p class="description">Master government contracts</p>
+                    <a href="../pages/contact.html" class="cta-button mt-3">Talk to Sales</a>
+
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Recruiters (Full-Time)</strong>: ✔ 1 (Govt Specialist)</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>: ✔ 1 (Govt Proposals/RFP Writer)</li>
+                        <li><strong>Admin Support</strong>: ✔ Full-Time Admin</li>
+                        <li><strong>GenRapide AI Access</strong>: ✔ Full Access (Govt Focus)</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>: ✔ Full ERP Integration</li>
+                        <li><strong>Monthly Strategy Calls</strong>: ✔ Priority Strategy Support</li>
+                        <li><strong>Custom Integration</strong>: ✔ Custom Integration</li>
+                        <li><strong>Priority Support</strong>: ✔ Priority Support</li>
+                        <li><strong>Compliance Setup</strong>: ✔ Government Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <!-- <div class="wrap-pricings">
+        <div class="package-box">
+            <img class="pricing-sphere" src="../images/spheres.webp" alt="">
+            <div class="price-toggler-container">
+                <span class="month">Monthly</span>
+                <div class="price-toggler"></div>
+                <span class="year">Yearly</span>
+            </div>
+        </div>
+
+        <div class="container px-4">
+            <div class="prc slider" style="gap: 8px; position: relative;">
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-rr-star logs"></i>
+                        <h2 class="pricing-head py-2">Trial</h2>
+                    </div>
+
+                    <div class=" httt-101">
+                        <span>Dive in with Zero Risk: Start Your Free Trial Today!
+                        </span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">0</span>
+                            <span class="duration">Per month</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span  class="f10" style="height: 115px;">
+                            Explore our services with a 14-days Free Trial- no commitments, just the freedom to discover
+                            what
+                            works for you.
+                        </span>
+
+                
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-trial">Try Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between  flex-column httt-100">
+                        <i class="fi fi-tr-bolt logs"></i>
+                        <h2 class="pricing-head py-2">Standard</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>Dive in with Zero Risk: Start Your Free Trial Today!</span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">15</span>
+                            <span class="duration">per month</span>
+                        </div>
+                    </div>
+                 
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span class="f10" style="height: 115px;">
+
+                            The Standard Package steps it up with enhanced capabilities and additional services,
+                            tailored
+                            for those who require a bit more to meet their needs.
+                        </span>
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-premium">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="material-icons-outlined logsss">
+                            diamond
+                        </i>
+                        <h2 class="pricing-head py-2">Premium</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>Elevate Your Experience with Our Elite Premium Package</span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">30</span>
+                            <span class="duration">per month</span>
+                        </div>
+                    </div>
+                  
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span  class="f10" style="height: 115px;">
+
+                            Unlock full access with our Premium Package, featuring exclusive services and the highest
+                            level
+                            of support for top-tier performance.
+                        </span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-premium">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <i class="fi fi-ss-angle-small-left faa"></i>
+        <i class="fi fi-ss-angle-small-right baa"></i>
+    </div> -->
+
+
+    <!-- <div class="wrap-pricings">
+        <div class="package-box">
+            <img class="pricing-gen" src="../images/GenRapide Logo-new.webp" alt="">
+            <div class="price-togglers-container">
+                <span class="month">Monthly</span>
+                <div class="price-togglers"></div>
+                <span class="year">Yearly</span>
+            </div>
+        </div>
+
+        <div class="container px-4">
+            <div class="prc genPlan" style="position: relative;">
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-rr-star logs"></i>
+                        <h2 class="pricing-head py-2">Basic</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>All the Essentials, None of the Fuss</span>
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">15</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+
+                        <span class="f10" style="height: 115px;">
+                            Get started with our Basic Package, designed to provide the fundamentals with no
+                            frills—ideal
+                            for anyone stepping into our services.
+                        </span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-tr-bolt logs"></i>
+                        <h2 class="pricing-head py-2">Standard</h2>
+
+                    </div>
+
+                    <div class="httt-101">
+
+
+                        <span>The Sweet Spot Between Essentials and Extras!</span>
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">30</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                 
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+
+                        <span class="f10" style="height: 115px;">
+
+                            Experience a balanced blend of functionality and value with our Standard Package, which
+                            offers
+                            more tools and features for your everyday tasks.
+                        </span>
+
+                        <div  class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="material-icons-outlined logsss">
+                            diamond
+                        </i>
+                        <h2 class="pricing-head py-2">Premium</h2>
+
+                    </div>
+
+                    <div class="httt-101">
+
+
+                        <span>Where Top-Tier Features Meet Unparalleled Service!
+                        </span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">45</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                  
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span class="f10" style="height: 115px;"> The Premium Package is our most comprehensive offering, designed for those
+                            who demand the
+                            best in quality and advanced features.</span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fi fi-ss-angle-small-left fon"></i>
+        <i class="fi fi-ss-angle-small-right bak"></i>
+    </div> -->
+
+
+
+    <div class="main-footer">
+        <footer class="three">
+
+            <div class="container">
+                <div class="row g-lg-4 gy-5">
+                    <div class="col-lg-4 col-sm-6 d-flex">
+                        <div class="footer-widget">
+                            <div class="footer-contact">
+                                <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                            </div>
+                            <div class="footer-contact mb-40">
+                                <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                    href="mailto:support@bnr360.com">support@bnr360.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Products</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/genrapide.html">GenRapide</a></li>
+                                    <li><a href="../pages/sphere.html">Sphere</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/service.html">TurnKey Solutions</a></li>
+                                    <li><a href="../pages/service.html">Enterprise</a></li>
+                                    <li><a href="../pages/service.html">Pay Per Need</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Resources</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/contact.html">Contact</a></li>
+                                    <li><a href="../pages/blogs.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-btn-content">
+                                <div class="copyright-area">
+                                    <p>©Copyright 2024</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="../js/script.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 820) {
+                    $('.slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.faa'),
+                        nextArrow: $('.baa'),
+                    });
+                } else {
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.slider').hasClass('slick-initialized')) {
+                    $('.slider').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 821) {
+                    $('.genPlan').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.fon'),
+                        nextArrow: $('.bak'),
+                    });
+                } else {
+                    $('.genPlan').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.genPlan').hasClass('slick-initialized')) {
+                    $('.genPlan').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+
+
+        const OpenButton = document.querySelector(".header-toggle")
+        const CloseButton = document.querySelector(".header-close")
+
+        OpenButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.add("active")
+        })
+
+        CloseButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.remove("active")
+        })
+
+
+    </script>
+</body>
+
+</html>
